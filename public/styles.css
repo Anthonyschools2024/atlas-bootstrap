@@ -1,0 +1,20 @@
+/* Minimal custom styles for Ticket Evolution */
+
+/* Set fonts using Google Fonts and update background to baby blue */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #89CFF0;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Coiny', cursive;
+}
+
+/* Navigation link hover and active states */
+.nav-link:hover {
+    color: #007BFF;
+}
+
+.nav-link:active {
+    color: #0056b3;
+}

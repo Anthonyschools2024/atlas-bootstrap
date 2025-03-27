@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ticket Evolution</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header with Nav Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Ticket Evolution</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" 
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#banner">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#concerts">Concerts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./purchase.html">Purchase Tickets</a>
+          </li>
+          <!-- New Navigation Link for Create Event -->
+          <li class="nav-item">
+            <a class="nav-link" href="./create_event.html">Create Event</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Banner Section with Quotes Carousel -->
+  <section id="banner" class="container mt-4">
+    <div id="quoteCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#quoteCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#quoteCarousel" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <!-- First Quote Card -->
+        <div class="carousel-item active">
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300?text=Concert+Image+1" 
+                  class="card-img" alt="Concert Image 1">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Experience the Thrill!</h5>
+                  <p class="card-text">"Live music brings us together. Enjoy the energy of a live performance!"</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Second Quote Card -->
+        <div class="carousel-item">
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x300?text=Concert+Image+2" 
+                  class="card-img" alt="Concert Image 2">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Feel the Music</h5>
+                  <p class="card-text">"A night at the concert is an unforgettable journey into sound and emotion."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#quoteCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#quoteCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Multi-Card Carousel Section -->
+  <section id="concerts" class="container mt-5">
+    <h2 class="mb-4">Featured Concerts</h2>
+    
+    <!-- Desktop Carousel: visible on large screens (4 cards per slide) -->
+    <div id="multiCardCarouselDesktop" class="carousel slide d-none d-lg-block" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Concert+1" 
+                  class="card-img-top" alt="Concert 1">
+                <div class="card-body">
+                  <h5 class="card-title">Rock Night</h5>
+                  <p class="card-text">Experience the best of rock music.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Concert+2" 
+                  class="card-img-top" alt="Concert 2">
+                <div class="card-body">
+                  <h5 class="card-title">Jazz Evening</h5>
+                  <p class="card-text">Smooth jazz performances to soothe your soul.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Concert+3" 
+                  class="card-img-top" alt="Concert 3">
+                <div class="card-body">
+                  <h5 class="card-title">Pop Fiesta</h5>
+                  <p class="card-text">Join the vibrant pop music celebration.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Concert+4" 
+                  class="card-img-top" alt="Concert 4">
+                <div class="card-body">
+                  <h5 class="card-title">EDM Blast</h5>
+                  <p class="card-text">Dance the night away with electrifying beats.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Additional carousel-items can be added here if needed -->
+      </div>
+      <a class="carousel-control-prev" href="#multiCardCarouselDesktop" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#multiCardCarouselDesktop" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    
+    <!-- Tablet Carousel: visible on medium screens (2 cards per slide) -->
+    <div id="multiCardCarouselTablet" class="carousel slide d-none d-md-block d-lg-none" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Concert+1" 
+                  class="card-img-top" alt="Concert 1">
+                <div class="card-body">
+                  <h5 class="card-title">Rock Night</h5>
+                  <p class="card-text">Experience the best of rock music.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Concert+2" 
+                  class="card-img-top" alt="Concert 2">
+                <div class="card-body">
+                  <h5 class="card-title">Jazz Evening</h5>
+                  <p class="card-text">Smooth jazz performances to soothe your soul.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Concert+3" 
+                  class="card-img-top" alt="Concert 3">
+                <div class="card-body">
+                  <h5 class="card-title">Pop Fiesta</h5>
+                  <p class="card-text">Join the vibrant pop music celebration.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Concert+4" 
+                  class="card-img-top" alt="Concert 4">
+                <div class="card-body">
+                  <h5 class="card-title">EDM Blast</h5>
+                  <p class="card-text">Dance the night away with electrifying beats.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#multiCardCarouselTablet" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#multiCardCarouselTablet" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    
+    <!-- Mobile Carousel: visible on small screens (1 card per slide) -->
+    <div id="multiCardCarouselMobile" class="carousel slide d-block d-md-none" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Concert+1" 
+              class="card-img-top" alt="Concert 1">
+            <div class="card-body">
+              <h5 class="card-title">Rock Night</h5>
+              <p class="card-text">Experience the best of rock music.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Concert+2" 
+              class="card-img-top" alt="Concert 2">
+            <div class="card-body">
+              <h5 class="card-title">Jazz Evening</h5>
+              <p class="card-text">Smooth jazz performances to soothe your soul.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Concert+3" 
+              class="card-img-top" alt="Concert 3">
+            <div class="card-body">
+              <h5 class="card-title">Pop Fiesta</h5>
+              <p class="card-text">Join the vibrant pop music celebration.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Concert+4" 
+              class="card-img-top" alt="Concert 4">
+            <div class="card-body">
+              <h5 class="card-title">EDM Blast</h5>
+              <p class="card-text">Dance the night away with electrifying beats.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#multiCardCarouselMobile" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#multiCardCarouselMobile" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Dropdown Menu Section -->
+  <section class="container mt-5" id="contact">
+    <h2 class="mb-4">Select Your Preferred Genre</h2>
+    <div class="dropdown mb-3">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="genreDropdown" 
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Choose Genre
+      </button>
+      <div class="dropdown-menu" aria-labelledby="genreDropdown">
+        <a class="dropdown-item" href="#">Rock</a>
+        <a class="dropdown-item" href="#">Jazz</a>
+        <a class="dropdown-item" href="#">Pop</a>
+      </div>
+    </div>
+    <p>Explore a wide range of concerts tailored to your musical taste.</p>
+  </section>
+  
+  <!-- Section with Aside -->
+  <section class="container mt-5">
+    <h2 class="mb-4">Event Details</h2>
+    <div class="row">
+      <aside class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-header">
+            Quick Info
+          </div>
+          <div class="card-body">
+            <p>Date: July 30, 2025</p>
+            <p>Time: 8:00 PM</p>
+            <p>Location: Main Arena</p>
+          </div>
+        </div>
+      </aside>
+      <div class="col-md-8">
+        <p>Join us for an unforgettable night of live performances from top artists. Enjoy exclusive backstage experiences, meet and greets, and more. Ticket Evolution brings you closer to the music you love.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-light mt-5 py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 Ticket Evolution. All rights reserved.</p>
+      <p>Follow us on 
+        <a href="#">Facebook</a>, 
+        <a href="#">Twitter</a>, 
+        <a href="#">Instagram</a>
+      </p>
+      <p>Developed by [Your Name]</p>
+    </div>
+  </footer>
+  
+  <!-- jQuery, Popper.js, and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+    crossorigin="anonymous"></script>
+</body>
+</html>

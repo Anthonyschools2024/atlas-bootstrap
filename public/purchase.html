@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ticket Evolution - Purchase Tickets</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+        crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header with Nav Bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Ticket Evolution</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContentPurchase" 
+        aria-controls="navbarContentPurchase" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContentPurchase">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./purchase.html">Ticket Portal <span class="sr-only">(current)</span></a>
+          </li>
+          <!-- New Navigation Link for Create Event -->
+          <li class="nav-item">
+            <a class="nav-link" href="./create_event.html">Create Event</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Ticket Purchasing Form Section -->
+  <section class="container mt-5">
+    <h2 class="mb-4">Purchase Tickets</h2>
+    <form id="purchaseForm">
+      <div class="form-group">
+        <label for="eventSelect">Select Event</label>
+        <select class="form-control" id="eventSelect" required>
+          <option value="">Choose an event</option>
+          <option value="rock">Rock Night</option>
+          <option value="jazz">Jazz Evening</option>
+          <option value="pop">Pop Fiesta</option>
+          <option value="edm">EDM Blast</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="ticketQuantity">Number of Tickets</label>
+        <input type="number" class="form-control" id="ticketQuantity" placeholder="Enter quantity" min="1" required>
+      </div>
+      <div class="form-group">
+        <label for="buyerName">Full Name</label>
+        <input type="text" class="form-control" id="buyerName" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="buyerEmail">Email address</label>
+        <input type="email" class="form-control" id="buyerEmail" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="buyerPhone">Phone Number</label>
+        <input type="tel" class="form-control" id="buyerPhone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
+        <label for="cardNumber">Credit Card Number</label>
+        <input type="text" class="form-control" id="cardNumber" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="cardExpiry">Expiry Date</label>
+          <input type="text" class="form-control" id="cardExpiry" placeholder="MM/YY" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="cardCVV">CVV</label>
+          <input type="text" class="form-control" id="cardCVV" placeholder="CVV" required>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Purchase</button>
+    </form>
+    <!-- Success Message -->
+    <div id="successMessage" class="alert alert-success mt-4 d-none" role="alert">
+      Thank you for your purchase! Your tickets have been booked.
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light mt-5 py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 Ticket Evolution. All rights reserved.</p>
+      <p>Follow us on 
+        <a href="#">Facebook</a>, 
+        <a href="#">Twitter</a>, 
+        <a href="#">Instagram</a>
+      </p>
+      <p>Developed by [Your Name]</p>
+    </div>
+  </footer>
+
+  <!-- jQuery, Popper.js, and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+    crossorigin="anonymous"></script>
+    
+  <script>
+    // Simple form submission handler to show a success message
+    document.getElementById('purchaseForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // In a real-world scenario, you would handle payment processing here.
+      document.getElementById('successMessage').classList.remove('d-none');
+    });
+  </script>
+</body>
+</html>
