@@ -33,3 +33,12 @@ Ticket Evolution is a web application that allows users to purchase concert tick
 1. Clone the repository or download the project files.
 2. Open your terminal and navigate to the project directory
 3. Go into the public folder and click on the index file to take veiw if the webpage!
+
+List for Each Task:
+task 1: You will find everything you need in the header.
+task 2: You find the data for 2 in the event detail section.
+task 3: You will find the data for this task in the banner section.
+task 4: You will also find this data in the banner section.
+task 5: You will find this data in the dropdown menu section.
+task 6: You will find this data in the aside section.
+task 7: You will find this data in the footer sction.
